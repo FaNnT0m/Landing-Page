@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page using HTML and CSS only</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu-btn">
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+        </div>
+        <a href="index1.html" class="logo">Arpit Yadav</a>
+
+        <nav class="navbar">
+            <a href="index1.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Services</h3>
+            <p>These are the services that I provide:<br>
+                <br>Website Development<br>User Interface (UI) Design<br>Frontend Prototyping<br>Frontend Performance Optimization<br>Collaboration and Technical Consulting.
+            </p>
+        </div>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navbar = document.querySelector('.navbar');
+
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
